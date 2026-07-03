@@ -1,5 +1,4 @@
 element.style {
-
 }
 {
     padding: 0,3rem;
@@ -26,14 +25,14 @@ body{
     color: var(--text);
     font-size: 18px;
     line-height: 1.6;
-    font-family: Arial, sans-serif;
+    font-family: Atkinson Hyperlegible, OpenDyslexic, sans-serif;
     border-style: solid; 
     border-width: 2px;
     border-color: blue;
 
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     color: var(--heading);
 }
 a {
@@ -64,13 +63,17 @@ footer{
 }
 #lazer
 {
-    width: 70px;
+    width: 250px;
 }
 #fds
 {
-    width: 100px;
+    width: 250px;
 }
 #gecil
 {
     width: 480px;
+}
+#Inoseb
+{
+    width: 480px
 }
