@@ -1,4 +1,13 @@
+:root{
+    --bg: lightblue;
+    --heading: red;
+    --link: blue;
+    --bg-footer: blue;
+    --text-footer: white;
+}
+
 body{
+    padding: 5px;
     background: var(--bg);
     color: var(--text);
     font-size: 18px;
@@ -25,11 +34,16 @@ button {
     padding: 12px 18px;
     border-radius: 10px;
 }
+
+footer{
+    background: var(--bg-footer);
+    color: var(--text-footer);
+}
+
 #logo 
 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
+    margin-right: 10px;
     width: 100px;
     
 }
