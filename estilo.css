@@ -1,8 +1,22 @@
+element.style {
+
+}
+{
+    padding: 0,3rem;
+    background-color: #567895;
+}
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
 :root{
     --bg: lightblue;
-    --heading: red;
+    --heading: indigo;
     --link: blue;
-    --bg-footer: blue;
+    --bg-footer: teal;
     --text-footer: white;
 }
 
@@ -36,6 +50,7 @@ button {
 }
 
 footer{
+    bottom: 0;
     background: var(--bg-footer);
     color: var(--text-footer);
 }
