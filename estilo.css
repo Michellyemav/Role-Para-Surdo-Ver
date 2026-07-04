@@ -12,7 +12,7 @@ div {
     unicode-bidi: isolate;
 }
 :root{
-    --bg: lightblue;
+    --bg: rgb(172, 191, 198);
     --heading: indigo;
     --link: blue;
     --bg-footer: teal;
