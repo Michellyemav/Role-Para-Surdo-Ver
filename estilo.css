@@ -1,25 +1,12 @@
-element.style {
-}
-{
-    padding: 0,3rem;
-    background-color: #567895;
-}
-*,*::before, *::after {
-    box-sizing: border-box;
-}
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-:root{
-    --bg: rgb(172, 191, 198);
-    --heading: indigo;
-    --link: blue;
-    --bg-footer: teal;
-    --text-footer: white;
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;   
 }
 
-body{
+
+body {
+
     padding: 5px;
     background: var(--bg);
     color: var(--text);
@@ -30,11 +17,134 @@ body{
     border-width: 2px;
     border-color: blue;
 
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
 }
 
-h1,h2,h3,h4 {
-    color: var(--heading);
+header {
+    background-color: #9bb3d2;
+    box-shadow: rgba(35, 29, 38, 0.75) 0px 13px 30px -12px;
+    position: relative;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 16px;
+
+}
+
+.navbar-links li {
+    color: #737380;
+    font-size: 20px;
+   
+    transition: 0.2s;   
+}
+
+.navbar-links li.active
+.navbar-links li.hover {   
+    color: #e1e1e6;
+}
+
+.navbar-links li a {
+    padding: 8px;
+}
+
+
+@media (min-width: 960px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .navbar-links {
+        opacity: 0;
+        top: 0;
+
+        position:absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+
+        flex-direction: column;
+        background-color: #202024;
+        box-shadow: rgba(35, 29, 38, 0.75) 0px 13px 30px -12px;
+        padding: 32px 0;
+        border-top: outset;
+        gap: 0;
+
+
+        transition: 0.5s;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+}
+
+    .navbar-links li a {
+      line-height: 40px;
+      width: 100%;
+      display: block;
+    }
+
+
+    .menu-hamb-button {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .btn-line {
+        width: 24px;
+        height: 3px;
+        background-color: #e1e1e6;
+    }
+
+
+
+:root {
+    --cor-primaria: #8ac4ea;
+    --fonte-principal: 'Arial', sans-serif;   
+}
+
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1
+{
+    color: darkmagenta;
+}
+
+h2,h3,h4 {
+    color:darkslateblue
+}
+    
+
 a {
     color: var(--link);
     text-decoration: underline;
@@ -42,38 +152,72 @@ a {
 
 button {
     background: var(--primary);
-    color:#FFFFFF;
+    color:black;
     border: none;
     padding: 12px 18px;
     border-radius: 10px;
-}
-
-footer{
-    bottom: 0;
-    background: var(--bg-footer);
-    color: var(--text-footer);
 }
 
 #logo 
 {
     float: left;
     margin-right: 10px;
-    width: 100px;
-    
+    width: 160px;
 }
-#lazer
-{
+
+#Início {
+   text-align: justify;
+   width: 250px;
+} 
+
+
+#CURSOS-E-EDUCAÇÃO {
+    text-align: justify;
     width: 250px;
 }
+
+#LAZER {
+     text-align: justify;
+    width: 250px;
+}
+
 #fds
 {
     width: 250px;
 }
 #gecil
 {
-    width: 480px;
+    width: 400px;
 }
 #Inoseb
 {
-    width: 480px
+    width: 400px;
+}
+
+#ViaSacra 
+{
+    width: 400px;
+}
+
+
+#surdodum {
+     width: 400px;
+}
+
+
+#variasmaos
+{
+    image-orientation: center; /* Centraliza */
+    width: 100px;
+}
+
+
+footer
+{
+    text-align: center; /* Centraliza */
+    border: 2px solid #2e679a;
+    border-radius: 15px;/* Deixa os cantos arredondados */
+    bottom: 0;
+    background: var(--bg-footer);
+    color: var(--text-footer);
 }
